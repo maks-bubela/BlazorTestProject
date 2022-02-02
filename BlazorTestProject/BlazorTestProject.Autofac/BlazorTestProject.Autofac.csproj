@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BlazorTestProject.BLL\BlazorTestProject.BLL.csproj" />
+    <ProjectReference Include="..\BlazorTestProject.DAL\BlazorTestProject.DAL.csproj" />
+  </ItemGroup>
+
+</Project>

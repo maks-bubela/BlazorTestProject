@@ -1,0 +1,295 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject.csproj": {}
+  },
+  "projects": {
+    "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject.Autofac\\BlazorTestProject.Autofac.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject.Autofac\\BlazorTestProject.Autofac.csproj",
+        "projectName": "BlazorTestProject.Autofac",
+        "projectPath": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject.Autofac\\BlazorTestProject.Autofac.csproj",
+        "packagesPath": "C:\\Users\\m_bubela\\.nuget\\packages\\",
+        "outputPath": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject.Autofac\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\m_bubela\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject.BLL\\BlazorTestProject.BLL.csproj": {
+                "projectPath": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject.BLL\\BlazorTestProject.BLL.csproj"
+              },
+              "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject.DAL\\BlazorTestProject.DAL.csproj": {
+                "projectPath": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject.DAL\\BlazorTestProject.DAL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "Autofac": {
+              "target": "Package",
+              "version": "[6.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject.BLL\\BlazorTestProject.BLL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject.BLL\\BlazorTestProject.BLL.csproj",
+        "projectName": "BlazorTestProject.BLL",
+        "projectPath": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject.BLL\\BlazorTestProject.BLL.csproj",
+        "packagesPath": "C:\\Users\\m_bubela\\.nuget\\packages\\",
+        "outputPath": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject.BLL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\m_bubela\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject.DAL\\BlazorTestProject.DAL.csproj": {
+                "projectPath": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject.DAL\\BlazorTestProject.DAL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject.DAL\\BlazorTestProject.DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject.DAL\\BlazorTestProject.DAL.csproj",
+        "projectName": "BlazorTestProject.DAL",
+        "projectPath": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject.DAL\\BlazorTestProject.DAL.csproj",
+        "packagesPath": "C:\\Users\\m_bubela\\.nuget\\packages\\",
+        "outputPath": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject.DAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\m_bubela\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.22, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.22, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject.csproj",
+        "projectName": "BlazorTestProject",
+        "projectPath": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject.csproj",
+        "packagesPath": "C:\\Users\\m_bubela\\.nuget\\packages\\",
+        "outputPath": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\m_bubela\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject.Autofac\\BlazorTestProject.Autofac.csproj": {
+                "projectPath": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject.Autofac\\BlazorTestProject.Autofac.csproj"
+              },
+              "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject.BLL\\BlazorTestProject.BLL.csproj": {
+                "projectPath": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject.BLL\\BlazorTestProject.BLL.csproj"
+              },
+              "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject.DAL\\BlazorTestProject.DAL.csproj": {
+                "projectPath": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject.DAL\\BlazorTestProject.DAL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "Autofac": {
+              "target": "Package",
+              "version": "[6.3.0, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly": {
+              "target": "Package",
+              "version": "[3.2.1, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.Build": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.2.1, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.2.1, )"
+            },
+            "System.Net.Http.Json": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
