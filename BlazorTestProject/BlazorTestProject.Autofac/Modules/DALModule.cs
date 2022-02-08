@@ -1,4 +1,5 @@
 ﻿using Autofac;
+using BlazorTestProject.Configuration;
 using BlazorTestProject.DAL.Context;
 
 namespace BlazorTestProject.Autofac.Modules
@@ -7,9 +8,9 @@ namespace BlazorTestProject.Autofac.Modules
     {
         protected override void Load(ContainerBuilder builder)
         {
-            //var connectionString = MintyIssueTrackerCoreConfiguration.CreateFromConfigurations().SqlConnectionString;
+            var connectionString = BlazorTestProjectConfiguration.CreateFromConfigurations().SqlConnectionString;
 
-            builder.Register(ctx => new BlazoreTestProjectContext("")).AsSelf();
+            builder.Register(ctx => new BlazoreTestProjectContext(connectionString)).AsSelf();
 
             base.Load(builder);
         }

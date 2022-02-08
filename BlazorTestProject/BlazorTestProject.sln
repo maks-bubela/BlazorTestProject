@@ -5,11 +5,17 @@ VisualStudioVersion = 16.0.32106.194
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorTestProject", "BlazorTestProject\BlazorTestProject.csproj", "{760B4632-7308-4A1E-B9D3-DF0CB03C1370}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorTestProject.DAL", "BlazorTestProject.DAL\BlazorTestProject.DAL.csproj", "{351F33B0-2A7A-40ED-91E4-88D698F40A79}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorTestProject.DAL", "BlazorTestProject.DAL\BlazorTestProject.DAL.csproj", "{351F33B0-2A7A-40ED-91E4-88D698F40A79}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorTestProject.BLL", "BlazorTestProject.BLL\BlazorTestProject.BLL.csproj", "{E52C1BCC-6B9C-4740-A228-EEC202288C9B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorTestProject.BLL", "BlazorTestProject.BLL\BlazorTestProject.BLL.csproj", "{E52C1BCC-6B9C-4740-A228-EEC202288C9B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorTestProject.Autofac", "BlazorTestProject.Autofac\BlazorTestProject.Autofac.csproj", "{FC182302-AE44-4E0C-B234-3EE7E9F735D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorTestProject.Autofac", "BlazorTestProject.Autofac\BlazorTestProject.Autofac.csproj", "{FC182302-AE44-4E0C-B234-3EE7E9F735D7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorTestProject.Configuration", "BlazorTestProject.Configuration\BlazorTestProject.Configuration.csproj", "{1245DD9C-54E4-497B-9508-7D6E87CCAD45}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorTestProject.Models", "BlazorTestProject.Models\BlazorTestProject.Models.csproj", "{6F07105C-0920-4A84-9834-381D47E5BAA4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorTestProject.ApiPortal", "BlazorTestProject.ApiPortal\BlazorTestProject.ApiPortal.csproj", "{BC42317E-48C5-4934-8858-33499FE69BEC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +39,18 @@ Global
 		{FC182302-AE44-4E0C-B234-3EE7E9F735D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC182302-AE44-4E0C-B234-3EE7E9F735D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC182302-AE44-4E0C-B234-3EE7E9F735D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1245DD9C-54E4-497B-9508-7D6E87CCAD45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1245DD9C-54E4-497B-9508-7D6E87CCAD45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1245DD9C-54E4-497B-9508-7D6E87CCAD45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1245DD9C-54E4-497B-9508-7D6E87CCAD45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F07105C-0920-4A84-9834-381D47E5BAA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F07105C-0920-4A84-9834-381D47E5BAA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F07105C-0920-4A84-9834-381D47E5BAA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F07105C-0920-4A84-9834-381D47E5BAA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC42317E-48C5-4934-8858-33499FE69BEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC42317E-48C5-4934-8858-33499FE69BEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC42317E-48C5-4934-8858-33499FE69BEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC42317E-48C5-4934-8858-33499FE69BEC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

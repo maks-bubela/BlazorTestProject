@@ -1,19 +1,75 @@
 ﻿@page "/signup"
+@using Microsoft.AspNetCore.Components
+@using BlazorTestProject.Models.Models
+@using System.Net
+@using BlazorTestProject.Providers
+@inject HttpClient client
+@inject NavigationManager NavigationManager
+@inject AuthStateProvider authStateProvider
 <h3>Sign Up</h3>
 
+@if (!IsSuccessRegist)
+{
+    <EditForm Model="userRegist" OnValidSubmit="UserRegistration" class="card card-body bg-light mt-5">
+        <DataAnnotationsValidator />
+        <div class="form-group row">
+            <label for="username" class="col-md-2 col-form-label">Username:</label>
+            <div class="col-md-10">
+                <InputText id="username" class="form-control" @bind-Value="userRegist.Username" />
+                <ValidationMessage For="@(() => userRegist.Username)" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="firstname" class="col-md-2 col-form-label">First name:</label>
+            <div class="col-md-10">
+                <InputText id="firstname" class="form-control" @bind-Value="userRegist.Firstname" />
+                <ValidationMessage For="@(() => userRegist.Firstname)" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="lastname" class="col-md-2 col-form-label">Last name:</label>
+            <div class="col-md-10">
+                <InputText id="lastname" class="form-control" @bind-Value="userRegist.Lastname" />
+                <ValidationMessage For="@(() => userRegist.Lastname)" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="password" class="col-md-2 col-form-label">Password:</label>
+            <div class="col-md-10">
+                <InputText type="password" id="password" class="form-control" @bind-Value="userRegist.Password" />
+                <ValidationMessage For="@(() => userRegist.Password)" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="repassword" class="col-md-2 col-form-label">RePassword:</label>
+            <div class="col-md-10">
+                <InputText type="password" id="repassword" class="form-control" @bind-Value="userRegist.RePassword" />
+                <ValidationMessage For="@(() => userRegist.RePassword)" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-right">
+                <button type="submit" class="btn btn-success">Create</button>
+            </div>
+        </div>
+    </EditForm>
 
-<p><b>Username:</b><br></p>
-<input type="text" size="40">
-<p><b>First name:</b><br></p>
-<input type="text" size="40">
-<p><b>Last name:</b><br></p>
-<input type="text" size="40">
-<p><b>Password:</b><br></p>
-<input type="text" size="40">
-<p><b>Confirm password:</b><br></p>
-<input type="text" size="40">
 
 
+}
+@if (IsSuccessRegist)
+{
+    <p><b>Registration is successful please login</b><br></p>
+}
 @code {
+    private UserRegistrationModel userRegist = new UserRegistrationModel();
+    private bool IsSuccessRegist = new bool();
+    private async Task UserRegistration()
+    {
+        var userInfo = await authStateProvider.Register(userRegist);
+        if (userInfo.StatusCode == HttpStatusCode.Created)
+            IsSuccessRegist = true;
+        //NavigationManager.NavigateTo($"userpanel/");
+    }
 
 }

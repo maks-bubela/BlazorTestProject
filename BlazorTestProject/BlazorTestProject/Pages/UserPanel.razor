@@ -1,0 +1,14 @@
+﻿@page "/userpanel"
+@using System.Security.Claims
+<AuthorizeView>
+    <Authorized>
+        <h3>UserPanel</h3>
+        Hello, @context.User.Identity.Name !
+    </Authorized>
+    <NotAuthorized>
+        You is not authorized
+    </NotAuthorized>
+</AuthorizeView>
+@code {
+
+}

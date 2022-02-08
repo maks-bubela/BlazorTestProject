@@ -28,3 +28,5 @@ C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject.Autofac\obj\D
 C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject.Autofac\obj\Debug\netstandard2.1\BlazorTestProject.Autofac.csproj.CopyComplete
 C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject.Autofac\obj\Debug\netstandard2.1\BlazorTestProject.Autofac.dll
 C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject.Autofac\obj\Debug\netstandard2.1\BlazorTestProject.Autofac.pdb
+C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject.Autofac\bin\Debug\netstandard2.1\BlazorTestProject.Configuration.dll
+C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject.Autofac\bin\Debug\netstandard2.1\BlazorTestProject.Configuration.pdb

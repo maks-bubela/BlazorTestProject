@@ -1,11 +1,46 @@
 ﻿@page "/signin"
+@using BlazorTestProject.Models.Models
+@using Microsoft.AspNetCore.Components
+@using System.Net
+@using BlazorTestProject.Providers
+@inject NavigationManager NavigationManager
+@inject AuthStateProvider authStateProvider
 <h3>Sign In</h3>
 
-<p><b>Username:</b><br></p>
-<input type="text" size="40">
-<p><b>Password:</b><br></p>
-<input type="text" size="40">
+{
+<EditForm Model="userLogin" OnValidSubmit="UserLogin" class="card card-body bg-light mt-5">
+    <DataAnnotationsValidator />
+    <div class="form-group row">
+        <label for="username" class="col-md-2 col-form-label">Username:</label>
+        <div class="col-md-10">
+            <InputText id="username" class="form-control" @bind-Value="userLogin.Username" />
+            <ValidationMessage For="@(() => userLogin.Username)" />
+        </div>
+        <div class="form-group row">
+            <label for="password" class="col-md-2 col-form-label">Password:</label>
+            <div class="col-md-10">
+                <InputText type="password" id="password" class="form-control" @bind-Value="userLogin.Password" />
+                <ValidationMessage For="@(() => userLogin.Password)" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-right">
+                <button type="submit" class="btn btn-success">Create</button>
+            </div>
+        </div>
+    </div>
+</EditForm>
 
 @code {
+    private UserLoginModel userLogin = new UserLoginModel();
+    [CascadingParameter]
+    public Task<AuthenticationState> AuthState { get; set; }
 
+    private async Task UserLogin()
+    {
+        var userInfo = await authStateProvider.Login(userLogin);
+        if (userInfo.StatusCode == HttpStatusCode.OK)
+            NavigationManager.NavigateTo($"userpanel/");
+        
+    }
 }

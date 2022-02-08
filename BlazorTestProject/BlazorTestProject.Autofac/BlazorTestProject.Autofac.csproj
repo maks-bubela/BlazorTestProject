@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BlazorTestProject.BLL\BlazorTestProject.BLL.csproj" />
+    <ProjectReference Include="..\BlazorTestProject.Configuration\BlazorTestProject.Configuration.csproj" />
     <ProjectReference Include="..\BlazorTestProject.DAL\BlazorTestProject.DAL.csproj" />
   </ItemGroup>
 

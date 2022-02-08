@@ -1,0 +1,52 @@
+﻿@page "/adminpanel"
+@using System.Security.Claims
+@using BlazorTestProject.DAL.Entities
+@using BlazorTestProject.Interfaces
+@using BlazorTestProject.Models.Models
+@inject IAdminApiService _adminApiService
+<AuthorizeView>
+    <Authorized>
+        <h3>AdminPanel</h3>
+        The user: @context.User.Identity.Name is authorized
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Role</th>
+                    <th>IsBlock</th>
+                    <th>IsDelete</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+            @foreach (UserModel user in usersList)
+            {
+                <tr>
+                    <td>@user.Username</td>
+                    <td>@user.Firstname</td>
+                    <td>@user.Lastname</td>
+                    <td>@user.RoleId</td>
+                    <td>@user.IsBlock</td>
+                    <td>@user.IsDelete</td>
+@*                    <td>
+                        <a class="btn btn-success" href="developer/edit/@dev.Id">Edit</a>
+                        <button class="btn btn-danger" @onclick="@(() => Delete(dev.Id))">Delete</button>
+                    </td>*@
+                </tr>
+            }
+            </tbody>
+        </table>
+    </Authorized>
+    <NotAuthorized>
+        You is not authorized
+    </NotAuthorized>
+</AuthorizeView>
+@code {
+    List<UserModel> usersList = new List<UserModel>();
+    protected override async Task OnInitializedAsync()
+    {
+        usersList = await _adminApiService.GetUsers();
+    }
+}

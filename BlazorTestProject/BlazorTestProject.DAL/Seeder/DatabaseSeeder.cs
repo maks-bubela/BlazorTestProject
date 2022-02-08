@@ -16,7 +16,8 @@ namespace BlazorTestProject.DAL.Seeder
             new User{
                 Id = 1,
                 Username = "admin",
-                Password = "admin",
+                Password = "+LHZUmFT7CmKe7fALiqT/GtMKo4D0An0EH2XDiPSt0U=",
+                Salt = "sdiBc/RhuqW8wEZWtmDixw==",
                 Firstname = "admin",
                 Lastname = "admin",
                 RoleId = 1

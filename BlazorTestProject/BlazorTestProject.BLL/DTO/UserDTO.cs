@@ -11,5 +11,7 @@ namespace BlazorTestProject.BLL.DTO
 
         public string Password { get; set; }
         public long RoleId { get; set; }
+        public bool IsDelete { get; set; }
+        public bool IsBlock { get; set; }
     }
 }

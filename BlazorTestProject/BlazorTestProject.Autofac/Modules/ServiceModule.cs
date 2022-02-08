@@ -1,4 +1,5 @@
 ﻿using Autofac;
+using BlazorTestProject.BLL.Cryptography;
 using BlazorTestProject.BLL.Interfaces;
 using BlazorTestProject.BLL.Services;
 
@@ -9,6 +10,8 @@ namespace BlazorTestProject.Autofac.Modules
         protected override void Load(ContainerBuilder builder)
         {
             builder.RegisterType<AuthenticationService>().As<IAuthenticationService>();
+            builder.RegisterType<AdminService>().As<IAdminService>();
+            builder.RegisterType<PasswordProcessing>().As<IPasswordProcessing>();
             base.Load(builder);
         }
     }

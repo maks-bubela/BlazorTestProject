@@ -8,3 +8,13 @@ C:\WorkSpace\BlazorStudy\BlazorTestProject\BlazorTestProject.DAL\bin\Debug\netst
 C:\WorkSpace\BlazorStudy\BlazorTestProject\BlazorTestProject.DAL\bin\Debug\netstandard2.1\BlazorTestProject.DAL.pdb
 C:\WorkSpace\BlazorStudy\BlazorTestProject\BlazorTestProject.DAL\obj\Debug\netstandard2.1\BlazorTestProject.DAL.dll
 C:\WorkSpace\BlazorStudy\BlazorTestProject\BlazorTestProject.DAL\obj\Debug\netstandard2.1\BlazorTestProject.DAL.pdb
+C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject.DAL\bin\Debug\netstandard2.1\BlazorTestProject.DAL.deps.json
+C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject.DAL\bin\Debug\netstandard2.1\BlazorTestProject.DAL.dll
+C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject.DAL\bin\Debug\netstandard2.1\BlazorTestProject.DAL.pdb
+C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject.DAL\obj\Debug\netstandard2.1\BlazorTestProject.DAL.csproj.AssemblyReference.cache
+C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject.DAL\obj\Debug\netstandard2.1\BlazorTestProject.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject.DAL\obj\Debug\netstandard2.1\BlazorTestProject.DAL.AssemblyInfoInputs.cache
+C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject.DAL\obj\Debug\netstandard2.1\BlazorTestProject.DAL.AssemblyInfo.cs
+C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject.DAL\obj\Debug\netstandard2.1\BlazorTestProject.DAL.csproj.CoreCompileInputs.cache
+C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject.DAL\obj\Debug\netstandard2.1\BlazorTestProject.DAL.dll
+C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject.DAL\obj\Debug\netstandard2.1\BlazorTestProject.DAL.pdb

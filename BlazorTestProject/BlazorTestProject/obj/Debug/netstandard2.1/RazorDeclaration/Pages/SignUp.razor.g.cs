@@ -11,66 +11,100 @@ namespace BlazorTestProject.Pages
     using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
-    using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "C:\WorkSpace\BlazorStudy\BlazorTestProject\BlazorTestProject\_Imports.razor"
+#line 1 "C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\WorkSpace\BlazorStudy\BlazorTestProject\BlazorTestProject\_Imports.razor"
+#line 2 "C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject\_Imports.razor"
 using System.Net.Http.Json;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\WorkSpace\BlazorStudy\BlazorTestProject\BlazorTestProject\_Imports.razor"
+#line 3 "C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\WorkSpace\BlazorStudy\BlazorTestProject\BlazorTestProject\_Imports.razor"
+#line 4 "C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "C:\WorkSpace\BlazorStudy\BlazorTestProject\BlazorTestProject\_Imports.razor"
+#line 5 "C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "C:\WorkSpace\BlazorStudy\BlazorTestProject\BlazorTestProject\_Imports.razor"
+#line 6 "C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject\_Imports.razor"
 using Microsoft.AspNetCore.Components.WebAssembly.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "C:\WorkSpace\BlazorStudy\BlazorTestProject\BlazorTestProject\_Imports.razor"
+#line 7 "C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "C:\WorkSpace\BlazorStudy\BlazorTestProject\BlazorTestProject\_Imports.razor"
+#line 8 "C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject\_Imports.razor"
 using BlazorTestProject;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "C:\WorkSpace\BlazorStudy\BlazorTestProject\BlazorTestProject\_Imports.razor"
+#line 9 "C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject\_Imports.razor"
 using BlazorTestProject.Shared;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 10 "C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject\_Imports.razor"
+using Microsoft.AspNetCore.Components.Authorization;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 2 "C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject\Pages\SignUp.razor"
+using Microsoft.AspNetCore.Components;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 3 "C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject\Pages\SignUp.razor"
+using BlazorTestProject.Models.Models;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject\Pages\SignUp.razor"
+using System.Net;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 5 "C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject\Pages\SignUp.razor"
+using BlazorTestProject.Providers;
 
 #line default
 #line hidden
@@ -83,6 +117,26 @@ using BlazorTestProject.Shared;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 64 "C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject\Pages\SignUp.razor"
+       
+    private UserRegistrationModel userRegist = new UserRegistrationModel();
+    private bool IsSuccessRegist = new bool();
+    private async Task UserRegistration()
+    {
+        var userInfo = await authStateProvider.Register(userRegist);
+        if (userInfo.StatusCode == HttpStatusCode.Created)
+            IsSuccessRegist = true;
+        //NavigationManager.NavigateTo($"userpanel/");
+    }
+
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private AuthStateProvider authStateProvider { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient client { get; set; }
     }
 }
 #pragma warning restore 1591

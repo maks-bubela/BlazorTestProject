@@ -6,6 +6,8 @@ namespace BlazorTestProject.BLL.Interfaces
 {
     public interface IAuthenticationService
     {
-        Task<long> AddNewAzureBlobTypeAsync(UserDTO dto);
+        Task<long> RegisterUserAsync(UserDTO dto);
+        Task<long> VerifyCredentialsAsync(string username, string password);
+        Task<UserIdentityDTO> GetUserIdentityById(long id);
     }
 }

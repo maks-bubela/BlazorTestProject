@@ -13,7 +13,10 @@ namespace BlazorTestProject.DAL.Entities
         public string Lastname { get; set; }
 
         public string Password { get; set; }
+        public string Salt { get; set; }
         public long RoleId { get; set; }
         public virtual Role Role { get; private set; }
+        public bool IsDelete { get; set; }
+        public bool IsBlock { get; set; }
     }
 }
