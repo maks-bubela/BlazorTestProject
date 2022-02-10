@@ -3,6 +3,7 @@
 @using BlazorTestProject.Models.Models
 @inject IAdminApiService _adminApiService
 @inject IAuthenticationApiService _authenticationApi
+@inject IRoleApiService _roleApiService
 @inject NavigationManager uriHelper
 <style>
     .dropbtn {
@@ -28,65 +29,70 @@
         z-index: 1;
     }
 
-    .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+            .dropdown-content a:hover {
+                background-color: #ddd;
+            }
+
+    .dropdown:hover .dropdown-content {
         display: block;
     }
-    .dropdown-content a:hover {background-color: #ddd;}
 
-    .dropdown:hover .dropdown-content {display: block;}
-
-    .dropdown:hover .dropbtn {background-color: #3e8e41;}
-
-     
+    .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+    }
 </style>
 <AuthorizeView Roles="admin">
     <Authorized>
         <h3>Admin Panel</h3>
         <table class="table table-striped">
             <thead>
-            <tr>
-                <th>Username</th>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Role</th>
-                <th>IsBlock</th>
-                <th>IsDelete</th>
-                <th></th>
-            </tr>
+                <tr>
+                    <th>Username</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Role</th>
+                    <th>IsBlock</th>
+                    <th>IsDelete</th>
+                    <th></th>
+                </tr>
             </thead>
             <tbody>
-            @foreach (UserInfoModel user in usersList)
-            {
-                <tr>
-                    <td>@user.Username</td>
-                    <td>@user.Firstname</td>
-                    <td>@user.Lastname</td>
-                    <td>
-                        <div class="dropdown">
-                            <button class="dropbtn">@user.RoleName</button>
-                            <div class="dropdown-content">
-                                @foreach (var role in rolesList)
-                                {
-                                    <a @onclick="@(() => UpdateUserStatus(user.Id, role.RoleName))">@role.RoleName</a>
-                                }
+                @foreach (UserInfoModel user in usersList)
+                {
+                    <tr>
+                        <td>@user.Username</td>
+                        <td>@user.Firstname</td>
+                        <td>@user.Lastname</td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="dropbtn">@user.RoleName</button>
+                                <div class="dropdown-content">
+                                    @foreach (var role in rolesList)
+                                    {
+                                        <a @onclick="@(() => UpdateUserStatus(user.Id, role.RoleName))">@role.RoleName</a>
+                                    }
+                                </div>
                             </div>
-                        </div>
-                    </td>
-                    <td>
-                        <button class="btn btn-danger" @onclick="@(() => BlockOrUnBlockUser(user.Id, user.IsBlock))">
-                            @if (true)
-                            {
-                                isBlocked(user.IsBlock);
-                            }
-                            @blockButtonName
-                        </button>
-                    </td>
-                    <td><button class="btn btn-danger" @onclick="@(() => DeleteUser(user.Id))">Delete</button></td>
-                </tr>
-            }
+                        </td>
+                        <td>
+                            <button class="btn btn-danger" @onclick="@(() => BlockOrUnBlockUser(user.Id, user.IsBlock))">
+                                @if (true)
+                                {
+                                    isBlocked(user.IsBlock);
+                                }
+                                @blockButtonName
+                            </button>
+                        </td>
+                        <td><button class="btn btn-danger" @onclick="@(() => DeleteUser(user.Id))">Delete</button></td>
+                    </tr>
+                }
             </tbody>
         </table>
     </Authorized>
@@ -95,15 +101,20 @@
     </NotAuthorized>
 </AuthorizeView>
 @code {
+
+    #region Models
     private List<UserInfoModel> usersList = new List<UserInfoModel>();
     private List<RoleNamesModel> rolesList = new List<RoleNamesModel>();
-    private string blockButtonName = "";
+    #endregion
+    #region Const
     const string BlockButtonName = "Block";
     const string UnBlockButtonName = "Unblock";
+    #endregion
+    private string blockButtonName = "";
     protected override async Task OnInitializedAsync()
     {
         usersList = await _adminApiService.GetUsers();
-        rolesList = await _authenticationApi.GetRolesAsync();
+        rolesList = await _roleApiService.GetRolesAsync();
         StateHasChanged();
     }
 

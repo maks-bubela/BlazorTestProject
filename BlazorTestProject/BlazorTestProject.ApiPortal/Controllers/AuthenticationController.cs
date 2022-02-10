@@ -8,9 +8,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using BlazorTestProject.Interfaces;
-using Microsoft.AspNetCore.Authorization;
-using MintyIssueTrackerCore.BLL.Enums;
+using BlazorTestProject.ApiPortal.Interfaces;
+using BlazorTestProject.BLL.Enums;
 
 namespace BlazorTestProject.ApiPortal.Controllers
 {
@@ -153,15 +152,6 @@ namespace BlazorTestProject.ApiPortal.Controllers
                 Claims = User.Claims
                     .ToDictionary(c => c.Type, c => c.Value)
             };
-        }
-
-        [HttpGet]
-        [Authorize]
-        [Route("users/get/roles")]
-        public async Task<List<RoleNamesModel>> RolesInfoAsync()
-        {
-            var roles = await _authenticationService.GetRoles();
-            return _mapper.Map<List<RoleNamesModel>>(roles);
         }
 
         private async Task<ClaimsIdentity> SetIdentityAsync(UserLoginModel userModel)

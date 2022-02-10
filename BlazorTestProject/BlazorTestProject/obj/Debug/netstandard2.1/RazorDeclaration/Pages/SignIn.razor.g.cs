@@ -125,9 +125,7 @@ using BlazorTestProject.Providers;
     private const string ErrorMessage = "Wrong password or username";
     protected override async Task OnInitializedAsync()
     {
-        errorMessage = "";
         StateHasChanged();
-
     }
     private async Task UserLogin()
     {

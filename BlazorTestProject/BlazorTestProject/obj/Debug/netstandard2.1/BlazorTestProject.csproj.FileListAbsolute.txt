@@ -1168,8 +1168,6 @@ C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject\obj\Debug\net
 C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.Extensions.ObjectPool.dll.br
 C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.Net.Http.Headers.dll.br
 C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.AspNetCore.WebUtilities.dll.br
-C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject\obj\Debug\netstandard2.1\integrity\oJY50ppH4z3kqO0D0aBhFSOcmx9ZJoGCTx7n1s4Lxuo=.hash
-C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject\obj\Debug\netstandard2.1\integrity\KQG7_lvHxkELigbMYM_yBbYTmD_-6B-99IJ-iBa5HyI=.hash
 C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject\obj\Debug\netstandard2.1\RazorDeclaration\Pages\Logout.razor.g.cs
 C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject\obj\Debug\netstandard2.1\Razor\Pages\Logout.razor.g.cs
 C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\Toolbelt.Blazor.HttpClientInterceptor.dll
@@ -1185,6 +1183,8 @@ C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject\obj\Debug\net
 C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject\bin\Debug\netstandard2.1\Microsoft.AspNetCore.JsonPatch.dll
 C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject\bin\Debug\netstandard2.1\Microsoft.AspNetCore.Mvc.Formatters.Json.dll
 C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject\obj\Debug\netstandard2.1\integrity\gkIipvi93hhq6PE_WvoKU82xCfBcfl2PTHNjD3enxt4=.hash
-C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject\obj\Debug\netstandard2.1\integrity\M-63WqL38WhirA3hIjs9j9-fRQg3RYh-Z5fwzjXUz3A=.hash
-C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject\obj\Debug\netstandard2.1\integrity\cya-TJ9J2gk-vNXFlEnmQcE-EeGXdPKpq2hgIFutKfU=.hash
-C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject\obj\Debug\netstandard2.1\integrity\s2dEYnbG7sJjeWmQU1Y--5SVznTN18qd1jBrR82dIkY=.hash
+C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject\obj\Debug\netstandard2.1\integrity\j6WG0tFAIn-oH4kmOtx1fiZWh0smeVqoXN4d5NinmfE=.hash
+C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject\obj\Debug\netstandard2.1\integrity\PRApe3xwew7p5EAUpwKxcb_m19XIQpD3Jzx5ZwSklbk=.hash
+C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject\obj\Debug\netstandard2.1\integrity\xx6ONTFutcxmcdGy4DZ5gco4mvjoAuohyfoY3oT30f4=.hash
+C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject\obj\Debug\netstandard2.1\integrity\IrHPolbkyV00rBriGKIRSHXKS_EC67Os0AzOIEKUIU8=.hash
+C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject\obj\Debug\netstandard2.1\integrity\xmkzNZ2P8ja4_ynU8CqOBzTltP6uiCj74NUhZmV5zCk=.hash

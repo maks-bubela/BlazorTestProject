@@ -7,6 +7,11 @@ namespace BlazorTestProject.Services
 {
     public class LocalStorageService : ILocalStorageService
     {
+        #region Const
+        private const string GetItemConst = "localStorage.getItem";
+        private const string SetItemConst = "localStorage.setItem";
+        private const string RemoveItemStorage = "localStorage.removeItem";
+        #endregion
         private IJSRuntime _jsRuntime;
 
         public LocalStorageService(IJSRuntime jsRuntime)
@@ -16,7 +21,7 @@ namespace BlazorTestProject.Services
 
         public async Task<T> GetItem<T>(string key)
         {
-            var json = await _jsRuntime.InvokeAsync<string>("localStorage.getItem", key);
+            var json = await _jsRuntime.InvokeAsync<string>(GetItemConst, key);
 
             if (json == null)
                 return default;
@@ -26,12 +31,12 @@ namespace BlazorTestProject.Services
 
         public async Task SetItem<T>(string key, T value)
         {
-            await _jsRuntime.InvokeVoidAsync("localStorage.setItem", key, JsonSerializer.Serialize(value));
+            await _jsRuntime.InvokeVoidAsync(SetItemConst, key, JsonSerializer.Serialize(value));
         }
 
         public async Task RemoveItem(string key)
         {
-            await _jsRuntime.InvokeVoidAsync("localStorage.removeItem", key);
+            await _jsRuntime.InvokeVoidAsync(RemoveItemStorage, key);
         }
     }
 }

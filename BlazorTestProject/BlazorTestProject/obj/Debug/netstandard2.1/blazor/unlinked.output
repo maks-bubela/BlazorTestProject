@@ -66,6 +66,7 @@ obj\Debug\netstandard2.1\blazor\unlinked\System.ComponentModel.DataAnnotations.d
 obj\Debug\netstandard2.1\blazor\unlinked\Microsoft.AspNetCore.Components.dll
 obj\Debug\netstandard2.1\blazor\unlinked\Microsoft.JSInterop.dll
 obj\Debug\netstandard2.1\blazor\unlinked\BlazorTestProject.Models.dll
+obj\Debug\netstandard2.1\blazor\unlinked\Microsoft.AspNetCore.Components.Authorization.dll
 obj\Debug\netstandard2.1\blazor\unlinked\Microsoft.AspNetCore.Components.WebAssembly.dll
 obj\Debug\netstandard2.1\blazor\unlinked\Microsoft.Extensions.DependencyInjection.dll
 obj\Debug\netstandard2.1\blazor\unlinked\Microsoft.Extensions.Configuration.dll
@@ -77,6 +78,5 @@ obj\Debug\netstandard2.1\blazor\unlinked\Microsoft.Extensions.FileSystemGlobbing
 obj\Debug\netstandard2.1\blazor\unlinked\Microsoft.Extensions.FileProviders.Abstractions.dll
 obj\Debug\netstandard2.1\blazor\unlinked\Microsoft.Extensions.Logging.dll
 obj\Debug\netstandard2.1\blazor\unlinked\Microsoft.JSInterop.WebAssembly.dll
-obj\Debug\netstandard2.1\blazor\unlinked\Microsoft.AspNetCore.Components.Authorization.dll
 obj\Debug\netstandard2.1\blazor\unlinked\BlazorTestProject.pdb
 obj\Debug\netstandard2.1\blazor\unlinked\BlazorTestProject.Models.pdb

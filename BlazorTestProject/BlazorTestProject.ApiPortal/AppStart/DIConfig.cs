@@ -1,10 +1,10 @@
 ﻿using Autofac;
 using AutoMapper;
+using BlazorTestProject.ApiPortal.Interfaces;
+using BlazorTestProject.ApiPortal.JwtConfig.Provider;
 using BlazorTestProject.ApiPortal.MappingProfiles;
 using BlazorTestProject.Autofac.Modules;
 using BlazorTestProject.BLL.MappingProfiles;
-using BlazorTestProject.Interfaces;
-using BlazorTestProject.JwtConfig.Provider;
 
 namespace BlazorTestProject.ApiPortal.AppStart
 {

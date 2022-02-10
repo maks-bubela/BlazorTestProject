@@ -17,6 +17,8 @@ namespace BlazorTestProject.BLL.Services
         {
             _ctx = ctx ?? throw new ArgumentNullException(nameof(BlazoreTestProjectContext));
         }
+
+        #region GetMethods
         public async Task<int> GetTokenSettingsAsync(EnvirementTypes type)
         {
             var tokenSetting = await _ctx.Set<BearerTokenSetting>().Include(x => x.EnvironmentType)
@@ -24,5 +26,6 @@ namespace BlazorTestProject.BLL.Services
                 .SingleOrDefaultAsync() ?? throw new EntityArgumentNullException(nameof(BearerTokenSetting));
             return tokenSetting.LifeTime;
         }
+        #endregion
     }
 }

@@ -14,6 +14,7 @@ namespace BlazorTestProject.Autofac.Modules
             builder.RegisterType<PasswordProcessing>().As<IPasswordProcessing>();
             builder.RegisterType<TokenService>().As<ITokenService>();
             builder.RegisterType<UserService>().As<IUserService>();
+            builder.RegisterType<RoleService>().As<IRoleService>();
             base.Load(builder);
         }
     }

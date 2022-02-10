@@ -11,7 +11,5 @@ namespace BlazorTestProject.Interfaces
         Task<HttpResponseMessage> LoginAsync(UserLoginModel loginRequest);
         Task<CurrentUser> CurrentUserInfoAsync(string token);
         Task<HttpResponseMessage> RegisterAsync(UserRegistrationModel registerRequest);
-        Task<List<RoleNamesModel>> GetRolesAsync();
-
     }
 }

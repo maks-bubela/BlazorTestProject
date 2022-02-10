@@ -14,14 +14,19 @@ namespace BlazorTestProject.BLL.Services
 {
     public class AdminService : IAdminService
     {
-        private readonly BlazoreTestProjectContext _ctx;
+        #region Services
         private readonly IMapper _mapper;
-
+        #endregion
+        #region Context
+        private readonly BlazoreTestProjectContext _ctx;
+        #endregion
         public AdminService(BlazoreTestProjectContext ctx, IMapper mapper, IPasswordProcessing passProcess)
         {
             _ctx = ctx ?? throw new ArgumentNullException(nameof(ctx));
             _mapper = mapper ?? throw new ArgumentNullException(nameof(IMapper));
         }
+
+        #region ListMethods
         public async Task<List<UserInfoDTO>> ListUsersAsync()
         {
             var users = await _ctx.Set<User>().Where(x => x.RoleId != (long)Roles.Admin & !x.IsDelete)
@@ -29,7 +34,8 @@ namespace BlazorTestProject.BLL.Services
             if (users == null) throw new ArgumentNullException(nameof(users));
             return _mapper.Map<List<UserInfoDTO>>(users);
         }
-
+        #endregion
+        #region Block/UnBlock Methods
         public async Task<bool> BlockUser(long id)
         {
             var user = await _ctx.Set<User>().Where(x => x.Id == id).SingleOrDefaultAsync();
@@ -39,19 +45,19 @@ namespace BlazorTestProject.BLL.Services
             return true;
         }
 
-        public async Task<bool> UserSoftDelete(long id)
-        {
-            var user = await _ctx.Set<User>().Where(x => x.Id == id).SingleOrDefaultAsync();
-            user.IsDelete = true;
-            _ctx.Entry(user).State = EntityState.Modified;
-            await _ctx.SaveChangesAsync();
-            return true;
-        }
-
         public async Task<bool> UnBlockUser(long id)
         {
             var user = await _ctx.Set<User>().Where(x => x.Id == id).SingleOrDefaultAsync();
             user.IsBlock = false;
+            _ctx.Entry(user).State = EntityState.Modified;
+            await _ctx.SaveChangesAsync();
+            return true;
+        }
+        #endregion
+        public async Task<bool> UserSoftDelete(long id)
+        {
+            var user = await _ctx.Set<User>().Where(x => x.Id == id).SingleOrDefaultAsync();
+            user.IsDelete = true;
             _ctx.Entry(user).State = EntityState.Modified;
             await _ctx.SaveChangesAsync();
             return true;
