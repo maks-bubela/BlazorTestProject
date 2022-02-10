@@ -1,24 +1,44 @@
 {
   "FilesToCompress": [
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\tO-IY5qqWp1v74FPZ1V0Lh3A4TfPJRGOG9-HcKF5qEE=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\M-63WqL38WhirA3hIjs9j9-fRQg3RYh-Z5fwzjXUz3A=.hash",
       "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\BlazorTestProject.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/BlazorTestProject.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\7zKFggP3JjqldnuuTpRWf6Gzze3iFLqHYDAJwcF7Jk8=.hash",
-      "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Net.Http.Formatting.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Net.Http.Formatting.dll.gz"
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\el8jtXkNRJtIfwv1iG7sMsrPHgydwVXBBbF-11gSC4E=.hash",
+      "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Text.Json.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Text.Json.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\tgbl3XemJCyh8d9xfrU9lQWuVpBDMLl1wI1PLb6MMxk=.hash",
-      "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Newtonsoft.Json.Bson.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Newtonsoft.Json.Bson.dll.gz"
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\kL-omZDwqByAi_lPdMeDmr3XjHcn4RVb_LmZ4mut1Yc=.hash",
+      "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Runtime.CompilerServices.Unsafe.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Runtime.CompilerServices.Unsafe.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\egPOud7Mcxx-20iAZiekEmazNYxAwi8HO1Z5_a4Ikww=.hash",
-      "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Linq.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Linq.dll.gz"
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\BaZPMj95_YNe3G4ckTGD6szZFwZeA2MOHn91zTGKDeU=.hash",
+      "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\mscorlib.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/mscorlib.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\ZxXy75PYbzJxNfAc-SAP1nUYm4gt1jSaOpFnBb9m85M=.hash",
+      "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Buffers.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Buffers.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\VwXSRQctPreEAFR7MhR9u24siwK6i9p2cpeY9e-erss=.hash",
+      "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.Bcl.AsyncInterfaces.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Bcl.AsyncInterfaces.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\-zcPVM75OAY_joGVM8yIC1gO1SFYWP1CFERgQ8PJkfA=.hash",
+      "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\netstandard.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/netstandard.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\IPbQMdJxZXdk8HTlaPyXdQ6Zb82iZLphnM74yO4EURQ=.hash",
+      "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Xml.Linq.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Xml.Linq.dll.gz"
     },
     {
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\Zw2-5aDWjgMedporhjigwhi-UCLcfl0tfa0LXUyD9HE=.hash",
@@ -41,29 +61,24 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Memory.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\BaZPMj95_YNe3G4ckTGD6szZFwZeA2MOHn91zTGKDeU=.hash",
-      "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\mscorlib.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/mscorlib.dll.gz"
-    },
-    {
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\6XMT1eT3svGdg6hFzAHJscYdTQjakoYccYTdHmKSr7Y=.hash",
       "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\WebAssembly.Bindings.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/WebAssembly.Bindings.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\-zcPVM75OAY_joGVM8yIC1gO1SFYWP1CFERgQ8PJkfA=.hash",
-      "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\netstandard.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/netstandard.dll.gz"
-    },
-    {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\IPbQMdJxZXdk8HTlaPyXdQ6Zb82iZLphnM74yO4EURQ=.hash",
-      "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Xml.Linq.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Xml.Linq.dll.gz"
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\8g0neeYVmPrxWgbMI0ZTVO6257qMisUTPZ78egAnIMw=.hash",
+      "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Numerics.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Numerics.dll.gz"
     },
     {
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\RMOYBniHZkD8OZrBV3ONIMTZqsBhSAcBFm4pVuY9dv4=.hash",
       "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Xml.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Xml.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\fMngt4py0YmfHqV6eONyCI6R5m_YOE7KZ3U4MzCrskE=.hash",
+      "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Mono.Security.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Mono.Security.dll.gz"
     },
     {
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\VAHA4LWcsdHUBgFG1-xwhc4IyJ0ZH9UyK9_qSPzDa6Y=.hash",
@@ -79,11 +94,6 @@
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\6mtLxbGMMGcIfch8cp0W9gmBoI493AxBRUPGEzOn3nU=.hash",
       "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.ServiceModel.Internals.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.ServiceModel.Internals.dll.gz"
-    },
-    {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\8g0neeYVmPrxWgbMI0ZTVO6257qMisUTPZ78egAnIMw=.hash",
-      "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Numerics.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Numerics.dll.gz"
     },
     {
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\moW4EYN6ExD6T0vSBMMggn62cZaTd8dSr9b-yj-9dPM=.hash",
@@ -126,9 +136,34 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Data.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\fMngt4py0YmfHqV6eONyCI6R5m_YOE7KZ3U4MzCrskE=.hash",
-      "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Mono.Security.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Mono.Security.dll.gz"
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\TkH6yxFQlTfY8NfznePrCdYJiEVpM9Dqy4Uu4H9qk10=.hash",
+      "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Threading.Tasks.Extensions.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Threading.Tasks.Extensions.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\qAKfFnquY_7UC-MzLi04rjqEhLzTryCoLg-S6MxI19I=.hash",
+      "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Numerics.Vectors.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Numerics.Vectors.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\m9HNCVrvo8ynpIhXiL90vBnYApXIS3VvI6b53AKk4NM=.hash",
+      "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Text.Encodings.Web.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Text.Encodings.Web.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\7zKFggP3JjqldnuuTpRWf6Gzze3iFLqHYDAJwcF7Jk8=.hash",
+      "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Net.Http.Formatting.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Net.Http.Formatting.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\tgbl3XemJCyh8d9xfrU9lQWuVpBDMLl1wI1PLb6MMxk=.hash",
+      "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Newtonsoft.Json.Bson.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Newtonsoft.Json.Bson.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\egPOud7Mcxx-20iAZiekEmazNYxAwi8HO1Z5_a4Ikww=.hash",
+      "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Linq.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Linq.dll.gz"
     },
     {
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\z8iFDTIYfU-3d7Ovx4YrLVKTe9yU9vK9m4VWuqBMIqw=.hash",
@@ -161,74 +196,14 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Collections.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\etsgJYQb32kqVnEuCK-nXhcwxx1keKj_1XWs1DJRpmI=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\gkIipvi93hhq6PE_WvoKU82xCfBcfl2PTHNjD3enxt4=.hash",
       "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Newtonsoft.Json.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Newtonsoft.Json.dll.gz"
-    },
-    {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\ubyINHXDmWOAugBDEb8CCz_uV68eordXiYDxpUeRBvg=.hash",
-      "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.CSharp.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.CSharp.dll.gz"
-    },
-    {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\Pt0gKZW54C_3DsLw_QRTQSP_ycXbOGSm2UWYSNZZYQ0=.hash",
-      "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Reflection.Primitives.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Reflection.Primitives.dll.gz"
-    },
-    {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\fFIyhWRt3TsR3191q2WtKgMNr3s-jNNnO4P5rrUojjA=.hash",
-      "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Reflection.Extensions.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Reflection.Extensions.dll.gz"
-    },
-    {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\mzuLugvmIOgYjOk4f3eQas5TIH2wER7oBvjOd1j22ps=.hash",
-      "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Threading.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Threading.dll.gz"
     },
     {
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\wDPt-zh9xGop_Vp7dKTGGcT9bZIAatqQ-eQLhtASLgw=.hash",
       "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Text.Encoding.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Text.Encoding.dll.gz"
-    },
-    {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\D2VIDaJ4RXF137pOsLTaYr0PcOtsgKNcyohlYtciLZI=.hash",
-      "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Xml.ReaderWriter.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Xml.ReaderWriter.dll.gz"
-    },
-    {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\iRJn1bctufxFpdvL9HsDYr8vyHJ43sN8tu_e9uvVEbs=.hash",
-      "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.ObjectModel.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.ObjectModel.dll.gz"
-    },
-    {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\KypsWhzq7xslp4YsPu9U2_wgm3YXsZR2ZUN4FgTVwZ0=.hash",
-      "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Runtime.Serialization.Formatters.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Runtime.Serialization.Formatters.dll.gz"
-    },
-    {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\9wi0kDjDIr2As0DGysE9JuDt-uTnuiip7mf4UlXg_BI=.hash",
-      "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Linq.Expressions.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Linq.Expressions.dll.gz"
-    },
-    {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\Bb8JHOjtpvbZWsd86j5fo-YwXYSlTxedlPo9_RxSlLk=.hash",
-      "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Dynamic.Runtime.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Dynamic.Runtime.dll.gz"
-    },
-    {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\RdBPwqgnAdTg7p1svJWuRNJXNqg0C-quM2upT5VUjCQ=.hash",
-      "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.ComponentModel.TypeConverter.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.ComponentModel.TypeConverter.dll.gz"
-    },
-    {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\8Q_uKcqkDjFjcXfcYU073dQlKb5IRta-UHFtV3Tjz9s=.hash",
-      "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Reflection.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Reflection.dll.gz"
-    },
-    {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\3o3XxHUixaHkHmaQFJjdobAN3Gi9Dv75TbqlrjclBBs=.hash",
-      "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Runtime.Serialization.Primitives.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Runtime.Serialization.Primitives.dll.gz"
     },
     {
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\tFMMNru1KjM9tY0dph3potA-qlmOtgZOwHLp_imUF7Y=.hash",
@@ -239,16 +214,6 @@
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\dqzLPW8oFg5YVC2_79UXgMTdvPsrnepDLYkV0Ipnmbo=.hash",
       "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Threading.Tasks.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Threading.Tasks.dll.gz"
-    },
-    {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\rHD3sezK_6cfOkyVhvtSBCALBQVXDeV-bRvYAMuaJ4M=.hash",
-      "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Xml.XDocument.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Xml.XDocument.dll.gz"
-    },
-    {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\-4oTK8YMD6i_DybGa_zAJd12CkYFNAaS61OeLkwBPjA=.hash",
-      "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Xml.XmlDocument.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Xml.XmlDocument.dll.gz"
     },
     {
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\CWadMXLl7iJZmsOz7PzKreH2b5rpyAFY8KYvg17YAv8=.hash",
@@ -266,39 +231,14 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Net.Http.Json.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\ZxXy75PYbzJxNfAc-SAP1nUYm4gt1jSaOpFnBb9m85M=.hash",
-      "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Buffers.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Buffers.dll.gz"
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\OoX_reV3vAah2S7ISHHRueoP_fwuBR0jJ4iKeniDApU=.hash",
+      "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Toolbelt.Blazor.HttpClientInterceptor.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Toolbelt.Blazor.HttpClientInterceptor.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\TkH6yxFQlTfY8NfznePrCdYJiEVpM9Dqy4Uu4H9qk10=.hash",
-      "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Threading.Tasks.Extensions.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Threading.Tasks.Extensions.dll.gz"
-    },
-    {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\el8jtXkNRJtIfwv1iG7sMsrPHgydwVXBBbF-11gSC4E=.hash",
-      "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Text.Json.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Text.Json.dll.gz"
-    },
-    {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\kL-omZDwqByAi_lPdMeDmr3XjHcn4RVb_LmZ4mut1Yc=.hash",
-      "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Runtime.CompilerServices.Unsafe.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Runtime.CompilerServices.Unsafe.dll.gz"
-    },
-    {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\VwXSRQctPreEAFR7MhR9u24siwK6i9p2cpeY9e-erss=.hash",
-      "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.Bcl.AsyncInterfaces.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Bcl.AsyncInterfaces.dll.gz"
-    },
-    {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\qAKfFnquY_7UC-MzLi04rjqEhLzTryCoLg-S6MxI19I=.hash",
-      "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Numerics.Vectors.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Numerics.Vectors.dll.gz"
-    },
-    {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\m9HNCVrvo8ynpIhXiL90vBnYApXIS3VvI6b53AKk4NM=.hash",
-      "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Text.Encodings.Web.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Text.Encodings.Web.dll.gz"
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\nc-8K18LlarEHkSgB19jf8sbM5yFz4Ews9Wh_2x12RE=.hash",
+      "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.DependencyInjection.Abstractions.dll.gz"
     },
     {
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\78lYFf9pC4nRKNajivrLVIp0tQKT5jecY_8QPnQ6b7g=.hash",
@@ -314,11 +254,6 @@
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\5F0XIdZVF9ZMfT2b4KdHsZIFfZ9VFwKhjz3Ko4VY6aQ=.hash",
       "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.Extensions.Primitives.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Primitives.dll.gz"
-    },
-    {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\nc-8K18LlarEHkSgB19jf8sbM5yFz4Ews9Wh_2x12RE=.hash",
-      "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.Extensions.DependencyInjection.Abstractions.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.DependencyInjection.Abstractions.dll.gz"
     },
     {
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\oC5IbzxK7-mC8--PbTWMLV5fHBzLEBiqTgeZG92GFa8=.hash",
@@ -371,12 +306,12 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.WebUtilities.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\bSgsT2x5xMvs8mara5wU_EJwcyHa9GVMU85HwhWcdWM=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\zBndU9-kEiYGc_8695_omvRiLWHZmmwB4ShkRKXfEd0=.hash",
       "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.AspNetCore.Components.Web.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Components.Web.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\m7Q_cF5-ji3OMfdGlCuE8pQ-iM_kxNHLq-IEWVvIaOg=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\5w68NvYY748cn-0adfn4VHPxZthFTUoiuyN0cbh2Bc0=.hash",
       "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.AspNetCore.Components.Forms.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Components.Forms.dll.gz"
     },
@@ -396,7 +331,12 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Components.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\LJig4MgqTeWQ63lQXnif2Vp_-mk86jfgwuozyf_ayro=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\AQnHNn-lOMSwgisqzdPZyZ8N51aN2UT4S3vpNLSmfZk=.hash",
+      "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.JSInterop.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\oJY50ppH4z3kqO0D0aBhFSOcmx9ZJoGCTx7n1s4Lxuo=.hash",
       "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\BlazorTestProject.Models.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/BlazorTestProject.Models.dll.gz"
     },
@@ -451,11 +391,6 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Logging.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\AQnHNn-lOMSwgisqzdPZyZ8N51aN2UT4S3vpNLSmfZk=.hash",
-      "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.JSInterop.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.dll.gz"
-    },
-    {
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\czNf3btAeBW-vvID5LAfgcsNZ_GM3ssVuPaMflcg0rs=.hash",
       "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.JSInterop.WebAssembly.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll.gz"
@@ -466,12 +401,12 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Components.Authorization.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\aniAT_3U5VrMM5GBxc6CFAhV5-xf-D9p32E63ORQURs=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\cya-TJ9J2gk-vNXFlEnmQcE-EeGXdPKpq2hgIFutKfU=.hash",
       "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\BlazorTestProject.pdb",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/BlazorTestProject.pdb.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\r_qcFMe1dajapzDQ7-0DTzgUy23inbnZNsTFiq4qzbs=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\KQG7_lvHxkELigbMYM_yBbYTmD_-6B-99IJ-iBa5HyI=.hash",
       "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\BlazorTestProject.Models.pdb",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/BlazorTestProject.Models.pdb.gz"
     },
@@ -496,7 +431,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.webassembly.js.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\C6lTK2EVqIEtIFRjyjJZUxAZBpLKi4N7tovA3iq_sYU=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\s2dEYnbG7sJjeWmQU1Y--5SVznTN18qd1jBrR82dIkY=.hash",
       "Source": "C:\\WorkSpace\\BlazorTestProject\\BlazorTestProject\\BlazorTestProject\\obj\\Debug\\netstandard2.1\\blazor\\blazor.boot.json",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.boot.json.gz"
     }

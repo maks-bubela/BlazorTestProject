@@ -121,13 +121,12 @@ using BlazorTestProject.Providers;
 #line 64 "C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject\Pages\SignUp.razor"
        
     private UserRegistrationModel userRegist = new UserRegistrationModel();
-    private bool IsSuccessRegist = new bool();
+    private static bool IsSuccessRegist = new bool();
     private async Task UserRegistration()
     {
         var userInfo = await authStateProvider.Register(userRegist);
         if (userInfo.StatusCode == HttpStatusCode.Created)
             IsSuccessRegist = true;
-        //NavigationManager.NavigateTo($"userpanel/");
     }
 
 

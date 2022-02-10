@@ -1,6 +1,4 @@
-﻿
-
-namespace BlazorTestProject.DAL.Interfaces
+﻿namespace BlazorTestProject.DAL.Interfaces
 {
     public interface IEntity
     {

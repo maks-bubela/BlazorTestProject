@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using BlazorTestProject.BLL.DTO;
-using BlazorTestProject.DAL.Entities;
 using BlazorTestProject.Models.Models;
 
 namespace BlazorTestProject.ApiPortal.MappingProfiles
@@ -11,12 +10,14 @@ namespace BlazorTestProject.ApiPortal.MappingProfiles
         {
             #region To DTO
             CreateMap<UserRegistrationModel, UserDTO>();
-            CreateMap<UserModel, UserDTO>();
+            CreateMap<UserInfoModel, UserInfoDTO>();
+            CreateMap<RoleNamesModel, RoleDTO>();
             #endregion
 
             #region from DTO
             CreateMap<UserDTO, UserRegistrationModel>();
-            CreateMap<UserDTO, UserModel>();
+            CreateMap<UserInfoDTO, UserInfoModel>();
+            CreateMap<RoleDTO, RoleNamesModel>();
             #endregion
         }
     }

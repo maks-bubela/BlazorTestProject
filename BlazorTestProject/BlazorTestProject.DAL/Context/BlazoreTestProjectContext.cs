@@ -11,6 +11,8 @@ namespace BlazorTestProject.DAL.Context
 
         public DbSet<User> Users { get; set; }
         public DbSet<Role> Roles { get; set; }
+        public DbSet<BearerTokenSetting> BearerTokenSettings { get; set; }
+        public DbSet<EnvironmentType> EnvironmentTypes { get; set; }
 
         private static DbContextOptions GetOptions(string connectionString)
         {

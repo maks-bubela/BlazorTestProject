@@ -6,6 +6,7 @@ using BlazorTestProject.BLL.Interfaces;
 using BlazorTestProject.DAL.Context;
 using BlazorTestProject.DAL.Entities;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using BlazorTestProject.BLL.Enums;
@@ -87,6 +88,13 @@ namespace BlazorTestProject.BLL.Services
             };
             return userIdentity;
         
+        }
+
+        public async Task<List<RoleDTO>> GetRoles()
+        {
+            var roles = await _ctx.Set<Role>().ToListAsync();
+            if (roles == null) throw new ArgumentNullException(nameof(roles));
+            return _mapper.Map<List<RoleDTO>>(roles);
         }
     }
 }

@@ -1,39 +1,90 @@
 ﻿@page "/adminpanel"
-@using System.Security.Claims
-@using BlazorTestProject.DAL.Entities
 @using BlazorTestProject.Interfaces
 @using BlazorTestProject.Models.Models
 @inject IAdminApiService _adminApiService
-<AuthorizeView>
+@inject IAuthenticationApiService _authenticationApi
+@inject NavigationManager uriHelper
+<style>
+    .dropbtn {
+        background-color: #04AA6D;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+    }
+
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .dropdown-content a:hover {background-color: #ddd;}
+
+    .dropdown:hover .dropdown-content {display: block;}
+
+    .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+     
+</style>
+<AuthorizeView Roles="admin">
     <Authorized>
-        <h3>AdminPanel</h3>
-        The user: @context.User.Identity.Name is authorized
+        <h3>Admin Panel</h3>
         <table class="table table-striped">
             <thead>
-                <tr>
-                    <th>Username</th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Role</th>
-                    <th>IsBlock</th>
-                    <th>IsDelete</th>
-                    <th></th>
-                </tr>
+            <tr>
+                <th>Username</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Role</th>
+                <th>IsBlock</th>
+                <th>IsDelete</th>
+                <th></th>
+            </tr>
             </thead>
             <tbody>
-            @foreach (UserModel user in usersList)
+            @foreach (UserInfoModel user in usersList)
             {
                 <tr>
                     <td>@user.Username</td>
                     <td>@user.Firstname</td>
                     <td>@user.Lastname</td>
-                    <td>@user.RoleId</td>
-                    <td>@user.IsBlock</td>
-                    <td>@user.IsDelete</td>
-@*                    <td>
-                        <a class="btn btn-success" href="developer/edit/@dev.Id">Edit</a>
-                        <button class="btn btn-danger" @onclick="@(() => Delete(dev.Id))">Delete</button>
-                    </td>*@
+                    <td>
+                        <div class="dropdown">
+                            <button class="dropbtn">@user.RoleName</button>
+                            <div class="dropdown-content">
+                                @foreach (var role in rolesList)
+                                {
+                                    <a @onclick="@(() => UpdateUserStatus(user.Id, role.RoleName))">@role.RoleName</a>
+                                }
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <button class="btn btn-danger" @onclick="@(() => BlockOrUnBlockUser(user.Id, user.IsBlock))">
+                            @if (true)
+                            {
+                                isBlocked(user.IsBlock);
+                            }
+                            @blockButtonName
+                        </button>
+                    </td>
+                    <td><button class="btn btn-danger" @onclick="@(() => DeleteUser(user.Id))">Delete</button></td>
                 </tr>
             }
             </tbody>
@@ -44,9 +95,45 @@
     </NotAuthorized>
 </AuthorizeView>
 @code {
-    List<UserModel> usersList = new List<UserModel>();
+    private List<UserInfoModel> usersList = new List<UserInfoModel>();
+    private List<RoleNamesModel> rolesList = new List<RoleNamesModel>();
+    private string blockButtonName = "";
+    const string BlockButtonName = "Block";
+    const string UnBlockButtonName = "Unblock";
     protected override async Task OnInitializedAsync()
     {
         usersList = await _adminApiService.GetUsers();
+        rolesList = await _authenticationApi.GetRolesAsync();
+        StateHasChanged();
+    }
+
+    private async Task DeleteUser(long userId)
+    {
+        await _adminApiService.SoftDeleteUser(userId);
+        await OnInitializedAsync();
+    }
+
+    private async Task isBlocked(bool isBlocked)
+    {
+        if (isBlocked)
+            blockButtonName = UnBlockButtonName;
+        else
+            blockButtonName = BlockButtonName;
+    }
+
+
+    private async Task BlockOrUnBlockUser(long userId, bool isBlocked)
+    {
+        if (isBlocked)
+            await _adminApiService.UnBlockUser(userId);
+        else
+            await _adminApiService.BlockUser(userId);
+        await OnInitializedAsync();
+    }
+
+    private async Task UpdateUserStatus(long userId, string roleName)
+    {
+        await _adminApiService.ChangeUserRole(userId, roleName);
+        await OnInitializedAsync();
     }
 }

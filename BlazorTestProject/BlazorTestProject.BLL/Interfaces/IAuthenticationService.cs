@@ -1,4 +1,5 @@
 ﻿
+using System.Collections.Generic;
 using BlazorTestProject.BLL.DTO;
 using System.Threading.Tasks;
 
@@ -9,5 +10,6 @@ namespace BlazorTestProject.BLL.Interfaces
         Task<long> RegisterUserAsync(UserDTO dto);
         Task<long> VerifyCredentialsAsync(string username, string password);
         Task<UserIdentityDTO> GetUserIdentityById(long id);
+        Task<List<RoleDTO>> GetRoles();
     }
 }

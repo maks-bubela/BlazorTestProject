@@ -4,11 +4,11 @@ using System;
 using System.Net.Http;
 using System.Threading.Tasks;
 using BlazorTestProject.Interfaces;
+using Microsoft.AspNetCore.Http;
 using BlazorTestProject.Providers;
 using BlazorTestProject.Services;
 using Microsoft.AspNetCore.Components.Authorization;
-using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.Configuration;
+using Toolbelt.Blazor.Extensions.DependencyInjection;
 
 namespace BlazorTestProject
 {
@@ -22,11 +22,6 @@ namespace BlazorTestProject
             builder.Services.AddScoped<HttpContextAccessor>();
             builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri("https://localhost:44323/") });
             builder.Services.AddAuthenticationCore();
-            /*            builder.Services.AddAuthorizationCore();
-                        builder.Services.AddScoped<AuthenticationStateProvider, AuthStateProvider>();*/
-
-
-
             builder.Services.AddOptions();
             builder.Services.AddAuthorizationCore();
             builder.Services.AddScoped<AuthStateProvider>();
@@ -34,6 +29,8 @@ namespace BlazorTestProject
             builder.Services.AddScoped<IAuthenticationApiService, AuthenticationApiService>();
             builder.Services.AddScoped<ILocalStorageService, LocalStorageService>();
             builder.Services.AddScoped<IAdminApiService, AdminApiService>();
+            builder.Services.AddScoped<IUserApiService, UserApiService>();
+            builder.Services.AddHttpClientInterceptor();
             await builder.Build().RunAsync();
         }
     }

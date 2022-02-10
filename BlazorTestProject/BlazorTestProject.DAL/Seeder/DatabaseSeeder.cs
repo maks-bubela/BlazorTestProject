@@ -22,6 +22,20 @@ namespace BlazorTestProject.DAL.Seeder
                 Lastname = "admin",
                 RoleId = 1
             });
+
+            modelBuilder.Entity<EnvironmentType>().HasData(
+                new EnvironmentType { Id = 1, Name = "staging" },
+                new EnvironmentType { Id = 2, Name = "development" },
+                new EnvironmentType { Id = 3, Name = "testing" },
+                new EnvironmentType { Id = 4, Name = "production" }
+            );
+
+            modelBuilder.Entity<BearerTokenSetting>().HasData(
+                new BearerTokenSetting { Id = 1, EnvironmentTypeId = 1, LifeTime = 30 },
+                new BearerTokenSetting { Id = 2, EnvironmentTypeId = 2, LifeTime = 30 },
+                new BearerTokenSetting { Id = 3, EnvironmentTypeId = 3, LifeTime = 1 },
+                new BearerTokenSetting { Id = 4, EnvironmentTypeId = 4, LifeTime = 7 }
+            );
         }
     }
 }

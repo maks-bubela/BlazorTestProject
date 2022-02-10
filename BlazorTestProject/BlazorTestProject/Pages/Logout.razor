@@ -1,0 +1,11 @@
+﻿@page "/logout"
+@using BlazorTestProject.Providers
+@inject AuthStateProvider authStateProvider
+@inject NavigationManager NavigationManager
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        await authStateProvider.Logout();
+        NavigationManager.NavigateTo($"/");
+    }
+}

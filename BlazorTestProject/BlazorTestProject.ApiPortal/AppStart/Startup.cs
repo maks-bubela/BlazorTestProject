@@ -1,10 +1,10 @@
-using System.Threading.Tasks;
 using Autofac;
-using BlazorTestProject.ApiPortal.IdentityUser;
+using BlazorTestProject.ApiPortal.ExtensionMethods;
+using BlazorTestProject.ApiPortal.Filters;
 using BlazorTestProject.DAL.Context;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
@@ -12,8 +12,15 @@ namespace BlazorTestProject.ApiPortal.AppStart
 {
     public class Startup
     {
-        // This method gets called by the runtime. Use this method to add services to the container.
-        // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
+
+        public IConfigurationRoot Configuration { get; set; }
+        public Startup(Microsoft.AspNetCore.Hosting.IHostingEnvironment env)
+        {
+            var builder = new ConfigurationBuilder()
+                .SetBasePath(env.ContentRootPath)
+                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
+            Configuration = builder.Build();
+        }
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddCors(options =>
@@ -26,16 +33,8 @@ namespace BlazorTestProject.ApiPortal.AppStart
                         .AllowAnyHeader());
             });
             services.AddControllersWithViews();
-            services.AddIdentity<UserIdentity, IdentityRole>().Services.AddE<BlazoreTestProjectContext>();
-            services.ConfigureApplicationCookie(options =>
-            {
-                options.Cookie.HttpOnly = false;
-                options.Events.OnRedirectToLogin = context =>
-                {
-                    context.Response.StatusCode = 401;
-                    return Task.CompletedTask;
-                };
-            });
+            services.AddJwtToken(Configuration);
+            services.AddMvc(options => options.Filters.Add(new ExceptionFilter()));
         }
 
         public void ConfigureContainer(ContainerBuilder builder)
@@ -43,7 +42,6 @@ namespace BlazorTestProject.ApiPortal.AppStart
             DIConfig.Configure(builder);
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
@@ -55,8 +53,9 @@ namespace BlazorTestProject.ApiPortal.AppStart
             {
                 app.UseDeveloperExceptionPage();
             }
-
             app.UseRouting();
+            app.UseAuthentication();
+            app.UseAuthorization();
             app.UseCors("CorsPolicy");
             app.UseEndpoints(endpoints =>
             {

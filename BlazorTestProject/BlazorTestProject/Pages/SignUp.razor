@@ -49,7 +49,7 @@
         </div>
         <div class="row">
             <div class="col-md-12 text-right">
-                <button type="submit" class="btn btn-success">Create</button>
+                <button type="submit" class="btn btn-success">Registration</button>
             </div>
         </div>
     </EditForm>
@@ -63,13 +63,12 @@
 }
 @code {
     private UserRegistrationModel userRegist = new UserRegistrationModel();
-    private bool IsSuccessRegist = new bool();
+    private static bool IsSuccessRegist = new bool();
     private async Task UserRegistration()
     {
         var userInfo = await authStateProvider.Register(userRegist);
         if (userInfo.StatusCode == HttpStatusCode.Created)
             IsSuccessRegist = true;
-        //NavigationManager.NavigateTo($"userpanel/");
     }
 
 }

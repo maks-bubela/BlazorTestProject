@@ -89,6 +89,29 @@ using Microsoft.AspNetCore.Components.Authorization;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 32 "C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject\Shared\MainLayout.razor"
+       
+
+    private async Task NavigateToSignIn()
+    {
+        NavigationManager.NavigateTo($"signin/");
+    }
+
+    private async Task NavigateToSignUp()
+    {
+        NavigationManager.NavigateTo($"signup/");
+    }
+
+    private async Task NavigateToLogout()
+    {
+        NavigationManager.NavigateTo($"logout/");
+    }
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
     }
 }
 #pragma warning restore 1591

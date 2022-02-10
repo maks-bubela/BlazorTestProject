@@ -1,15 +1,48 @@
 ﻿@inherits LayoutComponentBase
-
+@inject NavigationManager NavigationManager
 <div class="sidebar">
     <NavMenu />
 </div>
 
 <div class="main">
     <div class="top-row px-4">
-        <a href="http://blazor.net" target="_blank" class="ml-md-auto">About</a>
+        <AuthorizeView>
+            <Authorized>
+                <a href="" @onclick="NavigateToLogout" target="_blank" class="ml-md-auto" @onclick:preventDefault>Logout</a>
+            </Authorized>
+            <NotAuthorized>
+                <div>
+                    <a href="" @onclick="NavigateToSignUp" target="_blank" class="ml-md-auto" @onclick:preventDefault>Sign Up</a>
+                    <a class="ml-md-auto"> | </a>
+                    <a href="" @onclick="NavigateToSignIn" target="_blank" class="ml-md-auto" @onclick:preventDefault>Sign In</a>
+                </div>
+            </NotAuthorized>
+        </AuthorizeView>
+
     </div>
 
     <div class="content px-4">
-        @Body
-    </div>
+        <ErrorBoundary >
+            <ChildContent>
+                @Body
+            </ChildContent>
+        </ErrorBoundary>
 </div>
+</div>
+@code {
+
+    private async Task NavigateToSignIn()
+    {
+        NavigationManager.NavigateTo($"signin/");
+    }
+
+    private async Task NavigateToSignUp()
+    {
+        NavigationManager.NavigateTo($"signup/");
+    }
+
+    private async Task NavigateToLogout()
+    {
+        NavigationManager.NavigateTo($"logout/");
+    }
+}

@@ -1,7 +1,8 @@
-﻿
-using System;
+﻿using System;
+using System.Collections.Generic;
 using BlazorTestProject.Interfaces;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Net.Http.Json;
 using System.Threading.Tasks;
 using BlazorTestProject.Models.Models;
@@ -15,31 +16,31 @@ namespace BlazorTestProject.Services
         {
             _httpClient = httpClient;
         }
-        public async Task<HttpResponseMessage> Login(UserLoginModel loginRequest)
+        public async Task<HttpResponseMessage> LoginAsync(UserLoginModel loginRequest)
         {
-            var result = await _httpClient.PostAsJsonAsync("api/authentication/login", loginRequest);
-            if (result.StatusCode == System.Net.HttpStatusCode.BadRequest) 
-                throw new Exception(await result.Content.ReadAsStringAsync());
-            return result.EnsureSuccessStatusCode();
-        }
-        public async Task<HttpResponseMessage> Logout()
-        {
-            var result = await _httpClient.PostAsync("api/authentication/logout", null);
-            return result.EnsureSuccessStatusCode();
+            var httpResponse = await _httpClient.PostAsJsonAsync("api/authentication/token", loginRequest);
+            return httpResponse;
         }
 
-        public async Task<CurrentUser> CurrentUserInfo()
+        public async Task<List<RoleNamesModel>> GetRolesAsync()
         {
+            var result = await _httpClient.GetFromJsonAsync<List<RoleNamesModel>>
+                ("api/authentication/users/get/roles");
+            return result;
+        }
+
+        public async Task<CurrentUser> CurrentUserInfoAsync(string token)
+        {
+            _httpClient.DefaultRequestHeaders.Authorization =
+                new AuthenticationHeaderValue("Bearer", token);
             var result = await _httpClient.GetFromJsonAsync<CurrentUser>("api/authentication/user/info");
             return result;
         }
 
-        public async Task<HttpResponseMessage> Register(UserRegistrationModel registerRequest)
+        public async Task<HttpResponseMessage> RegisterAsync(UserRegistrationModel registerRequest)
         {
             var result = await _httpClient.PostAsJsonAsync
                 ("api/authentication/registration", registerRequest);
-            if (result.StatusCode == System.Net.HttpStatusCode.BadRequest) 
-                throw new Exception(await result.Content.ReadAsStringAsync());
             return result.EnsureSuccessStatusCode();
         }
     }

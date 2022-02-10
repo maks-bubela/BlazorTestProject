@@ -1,14 +1,26 @@
 ﻿@page "/userpanel"
-@using System.Security.Claims
+@using BlazorTestProject.Models.Models
+@using BlazorTestProject.Interfaces
+@inject IUserApiService _userApiService
 <AuthorizeView>
     <Authorized>
         <h3>UserPanel</h3>
         Hello, @context.User.Identity.Name !
+        @if (isBlocked)
+        {
+            <p>You are is blocked</p>
+        }
     </Authorized>
     <NotAuthorized>
         You is not authorized
     </NotAuthorized>
 </AuthorizeView>
 @code {
+    private bool isBlocked;
 
+    protected override async Task OnInitializedAsync()
+    {
+        isBlocked = await _userApiService.IsUserBlocked();
+        StateHasChanged();
+    }
 }

@@ -1,5 +1,4 @@
-﻿
-namespace BlazorTestProject.Models.Models
+﻿namespace BlazorTestProject.Models.Models
 {
     public class UserLoginModel
     {

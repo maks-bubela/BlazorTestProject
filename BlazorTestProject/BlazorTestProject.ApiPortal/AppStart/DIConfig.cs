@@ -3,6 +3,8 @@ using AutoMapper;
 using BlazorTestProject.ApiPortal.MappingProfiles;
 using BlazorTestProject.Autofac.Modules;
 using BlazorTestProject.BLL.MappingProfiles;
+using BlazorTestProject.Interfaces;
+using BlazorTestProject.JwtConfig.Provider;
 
 namespace BlazorTestProject.ApiPortal.AppStart
 {
@@ -13,6 +15,7 @@ namespace BlazorTestProject.ApiPortal.AppStart
 
             containerBuilder.RegisterModule<ServiceModule>();
             containerBuilder.RegisterModule<DALModule>();
+            containerBuilder.RegisterType<AuthOptions>().As<IAuthOptions>();
             containerBuilder.Register(ctx => new MapperConfiguration(cfg =>
             {
                 cfg.AddProfile(new UserProfileBLL());

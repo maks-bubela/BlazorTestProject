@@ -118,18 +118,23 @@ using BlazorTestProject.Providers;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 34 "C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject\Pages\SignIn.razor"
+#line 30 "C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject\Pages\SignIn.razor"
        
     private UserLoginModel userLogin = new UserLoginModel();
-    [CascadingParameter]
-    public Task<AuthenticationState> AuthState { get; set; }
+    private static string errorMessage = "";
+    private const string ErrorMessage = "Wrong password or username";
+    protected override async Task OnInitializedAsync()
+    {
+        errorMessage = "";
+        StateHasChanged();
 
+    }
     private async Task UserLogin()
     {
-        var userInfo = await authStateProvider.Login(userLogin);
-        if (userInfo.StatusCode == HttpStatusCode.OK)
-            NavigationManager.NavigateTo($"userpanel/");
-        
+        var response = await authStateProvider.Login(userLogin);
+        if (response.StatusCode == HttpStatusCode.Created)
+            NavigationManager.NavigateTo($"/");
+        errorMessage = ErrorMessage;
     }
 
 #line default

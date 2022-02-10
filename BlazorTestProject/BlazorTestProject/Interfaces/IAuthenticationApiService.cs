@@ -1,4 +1,5 @@
 ﻿
+using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
 using BlazorTestProject.Models.Models;
@@ -7,10 +8,10 @@ namespace BlazorTestProject.Interfaces
 {
     public interface IAuthenticationApiService
     {
-        Task<HttpResponseMessage> Login(UserLoginModel loginRequest);
-        Task<HttpResponseMessage> Logout();
-        Task<CurrentUser> CurrentUserInfo();
-        Task<HttpResponseMessage> Register(UserRegistrationModel registerRequest);
+        Task<HttpResponseMessage> LoginAsync(UserLoginModel loginRequest);
+        Task<CurrentUser> CurrentUserInfoAsync(string token);
+        Task<HttpResponseMessage> RegisterAsync(UserRegistrationModel registerRequest);
+        Task<List<RoleNamesModel>> GetRolesAsync();
 
     }
 }

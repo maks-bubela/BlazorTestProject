@@ -90,7 +90,7 @@ using Microsoft.AspNetCore.Components.Authorization;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 28 "C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject\Shared\NavMenu.razor"
+#line 35 "C:\WorkSpace\BlazorTestProject\BlazorTestProject\BlazorTestProject\Shared\NavMenu.razor"
        
     private bool collapseNavMenu = true;
 
