@@ -2,7 +2,9 @@
 using System;
 using System.Threading.Tasks;
 using AutoMapper;
+using BlazorTestProject.BLL.DTO;
 using BlazorTestProject.BLL.Interfaces;
+using BlazorTestProject.Models.Models;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNetCore.Authorization;
 
@@ -24,7 +26,7 @@ namespace BlazorTestProject.ApiPortal.Controllers
         }
         [HttpGet]
         [Authorize]
-        [Route("blockstatus")]
+        [Route("block/status")]
         public async Task<IActionResult> IsBlockUser()
         {
             var userId = User.Identity.GetUserId<long>();
@@ -34,6 +36,21 @@ namespace BlazorTestProject.ApiPortal.Controllers
                 return Ok(isBlocked);
             }
             throw new ArgumentNullException(nameof(userId));
+        }
+
+        [HttpPut]
+        [Authorize]
+        [Route("change/password")]
+        public async Task<IActionResult> UserPassChange(ChangePasswordModel model)
+        {
+            var userId = User.Identity.GetUserId<long>();
+            if (ModelState.IsValid && userId > 0)
+            {
+                var changePassDTO = _mapper.Map<UserChangePasswordDTO>(model);
+                var isChange = await _userService.UserChangePass(changePassDTO, userId);
+                return Ok(isChange);
+            }
+            throw new ArgumentNullException(nameof(ChangePasswordModel));
         }
     }
 }

@@ -11,6 +11,7 @@ namespace BlazorTestProject.ApiPortal.MappingProfiles
             #region To DTO
             CreateMap<UserRegistrationModel, UserDTO>();
             CreateMap<UserInfoModel, UserInfoDTO>();
+            CreateMap<ChangePasswordModel, UserChangePasswordDTO>();
             CreateMap<RoleNamesModel, RoleDTO>();
             #endregion
 
