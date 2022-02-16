@@ -5,28 +5,35 @@
 @using BlazorTestProject.Providers
 @inject NavigationManager NavigationManager
 @inject AuthStateProvider authStateProvider
-<h3>Sign In</h3>
-<EditForm Model="userLogin" OnValidSubmit="UserLogin" class="card card-body bg-light mt-5">
-    <DataAnnotationsValidator />
-    <div class="form-group row">
-        <label for="username" class="col-md-2 col-form-label">Username:</label>
-        <div class="col-md-10">
-            <InputText id="username" class="form-control" @bind-Value="userLogin.Username" />
-            <ValidationMessage For="@(() => userLogin.Username)" />
-        </div>
-    </div>
-    <div class="form-group row">
-        <label for="password" class="col-md-2 col-form-label">Password:</label>
-        <div class="col-md-10">
-            <InputText type="password" id="password" class="form-control" @bind-Value="userLogin.Password" />
-            <ValidationMessage For="@(() => userLogin.Password)" />
-        </div>
-    </div>
-    <label>@errorMessage</label>
-    <div class="col-md-12 text-right">
-        <button type="submit" class="btn btn-success">Login</button>
-    </div>
-</EditForm>
+<AuthorizeView Context="authStateProvider">
+    <Authorized>
+        <UserPanel />
+    </Authorized>
+    <NotAuthorized>
+        <h3>Sign In</h3>
+        <EditForm Model="userLogin" OnValidSubmit="UserLogin" class="card card-body bg-light mt-5">
+            <DataAnnotationsValidator />
+            <div class="form-group row">
+                <label for="username" class="col-md-2 col-form-label">Username:</label>
+                <div class="col-md-10">
+                    <InputText id="username" class="form-control" @bind-Value="userLogin.Username" />
+                    <ValidationMessage For="@(() => userLogin.Username)" />
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="password" class="col-md-2 col-form-label">Password:</label>
+                <div class="col-md-10">
+                    <InputText type="password" id="password" class="form-control" @bind-Value="userLogin.Password" />
+                    <ValidationMessage For="@(() => userLogin.Password)" />
+                </div>
+            </div>
+            <label>@errorMessage</label>
+            <div class="col-md-12 text-right">
+                <button type="submit" class="btn btn-success">Login</button>
+            </div>
+        </EditForm>
+    </NotAuthorized>
+</AuthorizeView>
 @code {
     private UserLoginModel userLogin = new UserLoginModel();
     private static string errorMessage = "";
